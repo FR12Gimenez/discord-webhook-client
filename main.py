@@ -9,7 +9,7 @@ def send_message(webhook_url, message):
     if response.status_code == 204:
         print("Message sent")
     else:
-        print("Did not send message or banned with the error code: {status_code}")
+        print("Did not send message or banned with the error code: " + {status_code})
 
 def main():
     webhook_url = input("Enter the webhook URL: ")
